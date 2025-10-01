@@ -1,0 +1,72 @@
+.card {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    /* optional flex if you want items inside row */
+    display: flex;
+    flex-direction: column; /* column is better for card layout */
+    align-items: center;
+}
+
+.card p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card h3 {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.text-muted {
+    opacity: 75%;
+}
+
+.skills-list {
+    list-style: none; /* remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list li {
+    position: relative; /* anchor tooltips here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-list li img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.skills-list li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
