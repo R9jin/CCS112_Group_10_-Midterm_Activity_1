@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AddTaskView from "./AddTaskView";
 import TaskListView from "./TaskListView";
-
+//John Bernard L. Velasco
 function App() {
   const [tasks, setTasks] = useState([]);
 
